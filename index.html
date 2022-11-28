@@ -1,0 +1,59 @@
+<!-- 
+  File: index.html
+    Patryk Piwowarczyk, patryk_piwowarczyk@student.uml.edu
+    Completed on 11/1/2022
+    This assignment is to create a dynamic multiplication table using javascript, css, and html.
+  All Sources:
+  1. https://getbootstrap.com/docs/3.4/getting-started/
+  2. https://cdnjs.com/libraries/jquery-validate
+  3. https://www.w3schools.com/html/html_form_input_types.asp
+  4. https://jqueryvalidation.org/documentation/
+  5. https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+  6. https://www.w3schools.com/w3css/w3css_tables.asp
+  7. https://www.geeksforgeeks.org/how-to-make-bootstrap-table-with-sticky-table-head/ 
+-->
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multiplication Table</title>
+    <link rel='stylesheet' href='css/style.css'>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="extensions/sticky-header/bootstrap-table-sticky-header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class ="container">
+      <h1>Dynamic Multiplication Table</h1>
+      <div class="row">
+        <!-- Source number 5 served as a large contributor to the lines below-->
+          <form id="inputForm" method="get"> 
+            <p>Enter Column Range (Min/Max):</p>
+            <input type="number" min="-50" max="50" id="first-Row" name = "firstRow"> <br>
+            <input type="number" min="-50" max="50" id = "last-Row" name = "lastRow"> <br><br>
+
+            <p>Enter Row Range (Min/Max):</p>
+            <input type="number" min="-50" max="50" id="first-Col" name = "firstCol"> <br>
+            <input type="number" min="-50" max="50" id = "last-Col" name = "lastCol"> <br>
+            <input type="button" id="submitButton" value="Generate Table" disabled="true">
+        </form>
+        <br>
+        <!-- Source 6 served a contributor in table selection -->
+          <div class="table-responsive">
+            <table class="table table-striped"></table>
+          </div>
+        </div>
+    </div>
+
+    <!-- Javascript Stuff -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+    <script src='javascript/script.js'></script>
+    <script src="extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
+  </body>
+</html>

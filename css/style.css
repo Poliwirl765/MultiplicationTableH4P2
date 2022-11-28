@@ -1,0 +1,70 @@
+/*
+File: style.css
+    Patryk Piwowarczyk, patryk_piwowarczyk@student.uml.edu
+    Completed on 11/1/2022
+*/
+body {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder !important;
+}
+.container{
+    margin-top: 20px;
+    width: 80%;
+    background-color: rgb(185, 219, 235);
+}
+
+.row {
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+p {
+    font-weight: bold;
+    font-size: medium;
+}
+
+#inputForm {
+    padding-bottom: 3px;
+    padding-right: 10%;
+    display: inline-block;
+}
+input {
+    width: 150px;
+}
+#first-Row {
+    margin-bottom: 3px;
+}
+#first-Col {
+    margin-bottom: 3px;
+}
+#last-Col {
+    margin-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, thead {
+    background: black;
+    color: white;
+    border: 1px solid white;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+td {
+    border: 2px solid black;
+}
+
+.table-responsive {
+    max-height: 650px;
+    max-width: 650px;
+    overflow: auto;
+}
