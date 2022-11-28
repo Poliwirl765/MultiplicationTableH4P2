@@ -31,12 +31,21 @@
         <!-- Source number 5 served as a large contributor to the lines below-->
           <form id="inputForm" method="get"> 
             <p>Enter Column Range (Min/Max):</p>
-            <input type="number" min="-50" max="50" id="first-Row" name = "firstRow"> <br>
-            <input type="number" min="-50" max="50" id = "last-Row" name = "lastRow"> <br><br>
+            <!--<input type="number" min="-50" max="50" id="first-Row" name = "firstRow"> <br>
+            <input type="number" min="-50" max="50" id = "last-Row" name = "lastRow"> <br><br> -->
+            <label for="slider-mini-FR">First Row:</label>
+            <input type="range" name="slider-mini-FR" id="slider-mini-FR" value="0" min="-50" max="50" data-highlight="true" data-mini="true">
+            <label for="slider-mini-LR">Last Row:</label>
+            <input type="range" name="slider-mini-LR" id="slider-mini-LR" value="0" min="-50" max="50" data-highlight="true" data-mini="true">
+
 
             <p>Enter Row Range (Min/Max):</p>
-            <input type="number" min="-50" max="50" id="first-Col" name = "firstCol"> <br>
-            <input type="number" min="-50" max="50" id = "last-Col" name = "lastCol"> <br>
+            <!--<input type="number" min="-50" max="50" id="first-Col" name = "firstCol"> <br>
+            <input type="number" min="-50" max="50" id = "last-Col" name = "lastCol"> <br> -->
+            <label for="slider-mini-FC">First Column:</label>
+            <input type="range" name="slider-mini-FC" id="slider-mini-FC" value="0" min="-50" max="50" data-highlight="true" data-mini="true">
+            <label for="slider-mini-LC">Last Column:</label>
+            <input type="range" name="slider-mini-LC" id="slider-mini-LC" value="0" min="-50" max="50" data-highlight="true" data-mini="true">
             <input type="button" id="submitButton" value="Generate Table" disabled="true">
         </form>
         <br>
@@ -54,5 +63,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
     <script src='javascript/script.js'></script>
     <script src="extensions/sticky-header/bootstrap-table-sticky-header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
   </body>
 </html>
