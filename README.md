@@ -1,4 +1,4 @@
 # MultiplicationTable
-# https://poliwirl765.github.io/MultiplicationTable/
+# https://poliwirl765.github.io/MultiplicationTableH4P2/
 
-# https://github.com/Poliwirl765/MultiplicationTable
+# https://github.com/Poliwirl765/MultiplicationTableH4P2
