@@ -1,69 +1,131 @@
 /*
 File: style.css
     Patryk Piwowarczyk, patryk_piwowarczyk@student.uml.edu
+    Completed 11/29/2022
+    
+    Sources:
+    1. Standard button styling: https://www.w3schools.com/css/css3_buttons.asp 
+    2. https://www.w3schools.com/howto/howto_js_rangeslider.asp
+    
 */
+
 body {
     text-align: center;
-}
-
-h1 {
-    text-align: center;
-    font-weight: bolder !important;
 }
 .container{
     margin-top: 20px;
     width: 80%;
     background-color: rgb(185, 219, 235);
 }
-
-.row {
-    padding-left: 10px;
-    padding-bottom: 3px;
+h1 {
+	background-size: auto;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder !important;
 }
-
-p {
-    font-weight: bold;
-    font-size: medium;
+label {
+	margin-right: 12px;
+	width: 100px;
+	display: inline-block;
+	text-align: center;
 }
-
-#inputForm {
-    padding-bottom: 3px;
-    padding-right: 10%;
+form div {
+	padding: 2px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+/* Only shift the text in the for "input" in inputForm */
+input[type="text"] {
+	width: 50px;
+	margin-right: 20px;
+	border: 1px solid #c1bfbf;
+	font-size: inherit;
+	text-align: center;
+}
+/* Sliders */
+.ui-slider-horizontal {
     display: inline-block;
+	position: relative;
+	height: 10px;
+	width: 175px;
+	margin-right: 25px;
+	margin-left: 15px;
+    top: 11px;
+    bottom: 5px;
 }
-input {
-    width: 150px;
+.ui-slider .ui-slider-handle {
+	height: 25px;
+	width: 5px;
+	padding-left: 8px;
 }
-#first-Row {
-    margin-bottom: 3px;
+/* Buttons */
+.buttonBox {
+	margin-top: 15px;
+	margin-bottom: 35px;
+	margin-left: 15px;
+	text-align: center;}
+button {
+	margin-right: 15px;
 }
-#first-Col {
-    margin-bottom: 3px;
+/* Label for Tab */
+.tabs li div {
+	display: inline-block;
 }
-#last-Col {
-    margin-bottom: 5px;
+/* Box for tabs*/
+.ui-tabs-panel {
+	overflow-x: auto;
 }
-
-table {
-    width: 100%;
-    border-collapse: collapse;
+/* Aligning the Checkbox Properly*/
+.tabCheckBox {
+	position: absolute;
+	top: 17px;
+	right: 2px;
+    padding-left: 2px;
+    border: 1px solid black;
 }
-
-th, thead {
-    background: black;
-    color: white;
-    border: 1px solid white;
-    position: sticky;
-    top: 0;
-    left: 0;
+/* Close button for each tab */
+.tabs li .ui-icon-close {
+	cursor: pointer;
+	display: inline-block;
 }
-
+/* Multiplication table */
+table, td {
+	border: 1px solid black;
+}
+tr {
+	height: 35px;
+}
+tr:first-child {
+	background-color: rgb(173, 170, 170);
+	font-weight: bold;
+}
 td {
-    border: 2px solid black;
+	min-width: 50px;
+	vertical-align: middle;
+	text-align: center;
 }
-
-.table-responsive {
-    max-height: 650px;
-    max-width: 650px;
-    overflow: auto;
+td:first-child {
+	background-color: rgb(173, 170, 170);
+	font-weight: bold;
+}
+tr:not(first-child) {
+    background-color: rgb(185, 219, 235);
+}
+.button {
+    display: inline-block;
+	border:1px solid black;
+	color: rgb(163, 157, 157);
+	padding: 20px 40px;
+	font-size: 20px;
+    height: 20px;
+    text-align: center;
+	text-decoration: none;
+}
+/* Error messages */
+.error {
+	color: red;
+    font-weight: bold;
+}
+span.error {
+	font-size: 10px;
 }
